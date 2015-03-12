@@ -2,7 +2,10 @@
 # -- coding:utf-8 --
 """
 -----------------------------------------------------------------
-使用说明:
+说明:
+将1024x1024图片保存为所需设备的各Icon及iTunesArtwork文件,并将Info.plist
+中需要的Icon配置输出,方便粘贴至 Info.plist 中
+
 示例:
 ./icon.py             转化iphone ios6及以上版本icon
 ./icon.py iphone 6    转化iphone ios6及以上版本icon
@@ -13,6 +16,12 @@
 ./icon.py all         转化iphone,ipad ios6及以上版本icon
 ./icon.py all 6       转化iphone,ipad ios6及以上版本icon
 ./icon.py all 7       转化iphone,ipad ios7及以上版本icon
+
+备注:
+需要依赖库Pillow: http://pillow.readthedocs.org/en/latest/
+安装Pillow $: sudo pip install Pillow
+安装pip:   $: sudo easy_install pip
+
 -----------------------------------------------------------------
 """
 import os, sys

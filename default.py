@@ -1,5 +1,21 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
+"""
+-----------------------------------------------------------------
+说明:
+将文件所在文件夹中的启动图片根据图片的大小命名为各平台真正需要的图片
+
+示例:
+./default.py 
+
+备注:
+需要依赖库Pillow: http://pillow.readthedocs.org/en/latest/
+安装Pillow $: sudo pip install Pillow
+安装pip:   $: sudo easy_install pip
+-----------------------------------------------------------------
+"""
+
+
 import os
 import re
 from PIL import Image
